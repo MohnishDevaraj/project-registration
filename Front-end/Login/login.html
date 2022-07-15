@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd2255194d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" text="text/css" href="./login.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <header>
+            <nav id="menu">
+                <!-- <a href="../Home/home.html">
+                 <img src="Image/headimg.jpeg" class="img">
+                </a> -->
+                <ul class="blackbox">
+                    <li><a href="../Register/register.html">Register</a></li>
+                    <li><a href="../Home/home.html">Home</a></li>
+                </ul>
+                <!--<ul>
+                <li><a href="../Register/register.html">Register</a></li>
+                <li><a href="../Login/login.html">Login</a></li>
+                <li><a href="../Home/home.html">Home</a></li>
+                </ul>-->
+            </nav>
+    </header>
+    </section>
+    <section>
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="myInput" required>
+                    <label>Password</label>
+                </div>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <br>
+                <br>
+                <div class="pass">Don't have an account! <a href="../Register/register.html">Create Account</a></div>
+                <input type="submit" value="Login">
+                <div class="signup_link"></div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <!-- <footer class="footer">
+            <p>| &copy; Copyright 2022; ACM Sathyabama Institute of Science and Technology, All rights reserved.|</p>
+            <a href="https://www.instagram.com/acmsist/" class="footer_a" target="_blank"><i class="fa-brands fa-instagram" class="icon"></i></a>
+            <a href="https://www.linkedin.com/company/acm-sist-student-chapter/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+        </footer> -->
+        <!-- <footer class="footer">
+            <div class="text">
+            <span> <a href="#"></a> | &#169; 2022 All Rights Reserved ACM Sathyabama Institute of Science and Technology   |</span>
+            <a href="https://www.instagram.com/acmsist/" class="footer_a" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/acm-sist-student-chapter/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </footer> -->
+    </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+    </script>
+</body>
+</html>
